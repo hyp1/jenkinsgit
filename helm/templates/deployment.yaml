@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jenkinsgit
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: jenkinsgit
+  template:
+    metadata:
+      labels:
+        app: jenkinsgit
+    spec:
+      containers:
+        - name: jenkinsgit
+          image: localhost:32000/jenkinsgit:latest
+          ports:
+            - containerPort: 8080
+          env:
+            - name: MONGO_URL
+              value: mongodb://admin:kimo2002@kimo2007.dnshome.de:30077/messages
+          imagePullPolicy: Always
+
