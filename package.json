@@ -19,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/hyp1/jenkinsgit/issues"
   },
-  "homepage": "https://github.com/hyp1/jenkinsgit#readme"
+  "homepage": "https://github.com/hyp1/jenkinsgit#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongodb": "^4.1.3"
+  }
 }
