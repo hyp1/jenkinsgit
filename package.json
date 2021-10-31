@@ -1,0 +1,23 @@
+{
+  "name": "jenkinsgit",
+  "version": "1.0.0",
+  "description": "Jenkins Git Integration",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hyp1/jenkinsgit.git"
+  },
+  "keywords": [
+    "Jenkins",
+    "Git"
+  ],
+  "author": "robert_schweng@hotmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hyp1/jenkinsgit/issues"
+  },
+  "homepage": "https://github.com/hyp1/jenkinsgit#readme"
+}
