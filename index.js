@@ -9,7 +9,7 @@ const HOST = '0.0.0.0';
 // App
 const app = express();
 app.get('/', (req, res) => {
-  res.send('Hello Jenkinsgit<pre>'+JSON.stringyfy(process.env)+"</pre>");
+  res.send('Hello Jenkinsgit<pre>'+JSON.stringify(process.env)+"</pre>");
 });
 
 app.listen(PORT, HOST);
