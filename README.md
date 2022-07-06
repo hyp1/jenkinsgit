@@ -2,4 +2,4 @@
 
 Jenkins Git Integration 
 
-Generic Webhook Plugin integration New
+Generic Webhook Plugin integration New2
