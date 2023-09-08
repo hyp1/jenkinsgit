@@ -9,7 +9,7 @@ const HOST = '0.0.0.0';
 // App
 const app = express();
 app.get('/', (req, res) => {
-  res.send('HOHOHO Hello Jenkinsgitv2 CCCCC<br><pre>'+JSON.stringify(process.env)+"</pre>");
+  res.send('< h1>Jenkinsgit</h1><small>Deploy from Githaub to Kubernetes</small><br><pre>'+JSON.stringify(process.env)+"</pre>");
 });
 
 app.listen(PORT, HOST);
