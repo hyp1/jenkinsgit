@@ -1,0 +1,24 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    nginx.ingress.kubernetes.io/configuration-snippet: |
+      rewrite ^(/jenkinsgit)$ $1/ redirect;
+  name: jenkinsgit-ingress
+spec:
+  defaultBackend:
+    service:
+      name: custom-default-backend
+      port:
+        number: 80
+  rules:
+    - host: kimo2007.dnshome.de
+      http:
+        paths:
+          - path: /jenkinsgit
+            pathType: Prefix
+            backend:
+              service:
+                name: jenkinsgit-service
+                port: 
+                 number: 80
