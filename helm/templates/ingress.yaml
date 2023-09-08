@@ -2,8 +2,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   annotations:
-    nginx.ingress.kubernetes.io/configuration-snippet: |
-      rewrite ^(/jenkinsgit)$ $1/ redirect;
+    nginx.ingress.kubernetes.io/rewrite-target: /$2
   name: jenkinsgit-ingress
 spec:
   ingressClassName: public
