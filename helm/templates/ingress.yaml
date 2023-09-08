@@ -6,11 +6,7 @@ metadata:
       rewrite ^(/jenkinsgit)$ $1/ redirect;
   name: jenkinsgit-ingress
 spec:
-  defaultBackend:
-    service:
-      name: custom-default-backend
-      port:
-        number: 80
+  ingressClassName: public
   rules:
     - host: kimo2007.dnshome.de
       http:
